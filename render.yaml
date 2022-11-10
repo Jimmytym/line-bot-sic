@@ -3,7 +3,7 @@ services:
   name: line-bot-python-flask
   env: python
   repo: https://github.com/Jimmytym/line-bot-sic
-  buildCommand: cd line-bot-sic/flask-echo;pip install -r requirements.txt
+  buildCommand: cd line-bot-sic/flask-echo;pip install gunicorn-r requirements.txt
   startCommand: cd line-bot-sic/flask-echo;gunicorn app:linebotReply
   plan: free
   autoDeploy: false
