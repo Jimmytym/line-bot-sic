@@ -7,8 +7,8 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage,ImageSendMessage,PostbackEvent, LocationSendMessage,TextSendMessage, TemplateSendMessage, ConfirmTemplate, MessageTemplateAction, ButtonsTemplate, PostbackTemplateAction, URITemplateAction, CarouselTemplate, CarouselColumn, ImageCarouselTemplate, ImageCarouselColumn
 from urllib.parse import parse_qsl
 
-line_bot_api = LineBotApi('/ejzLKmXhjPExOkDqqTrxusP+BP+GtpcPHv1QtYAE/mzPBvobZCye6Th3N+JgpANLORCEWPAZv4DJaZyRHUFc1soEAjBc7ZhSd5e8NvbkDiMD0fsL+K9Q+4xf1cZdWExjV5pQyWiSt8lz29cc1TuaQdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('3d725589472a3c27bfa0ebfb4083d8ff')
+line_bot_api = LineBotApi('W5E7SLEGvd9eNDzvWAS3SQx/rQU9RYXJ4+yEg9Usps1eDiz4I2ii7F7CWHhaKKQDLORCEWPAZv4DJaZyRHUFc1soEAjBc7ZhSd5e8NvbkDg7sNdgOGLJu+7M3bESi2USfidfLY4Ju0wvG6yKogAN3gdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('0b2fb3cceafc6ebcae488862362d1fe9')
 # line_bot_api.push_message('U9c23a5d47eb633a60cc8d14e677b74f4', TextSendMessage(text='歡迎加入台體運資傳BOT，點選下方選單來獲取想了解的資訊喔'))
 @app.route("/callback", methods=['POST'])
 def callback():
